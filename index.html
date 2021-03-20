@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS 2 Formation</title>
+</head>
+<body>
+    
+    <div class="app">
+        <span v-html="google"></span>
+        Hello My name is {{nom}} i have {{age}} years <br />
+        {{ sayName() }} 
+        <img :src="img" alt="" srcset=""><br/>
+        <input type="text" :value="nom">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
