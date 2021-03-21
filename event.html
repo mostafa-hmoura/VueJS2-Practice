@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event In VueJS2</title>
+</head>
+<body>
+
+    <h1>Event In VueJS2</h1>
+    <div class="app">
+        
+        <form action="">
+            <input v-model="name" @keyup.ctrl.enter="add" @keyup.alt.enter="logName" type="text">
+            <input v-model="name" type="text">
+            <button @click.prevent="add">Submit</button>
+        </form>
+        <hr>
+        <a href="http://www.google.com" @click.prevent="add"> Google </a>
+        <hr>
+        <input type="text" v-model="initValue">
+        <hr>
+        <h1>{{counter}}</h1>
+        <h3>Result : {{ calcul }}</h3>
+        <hr>
+        <span>{{name}}</span>
+        <hr>
+        <button v-on:click="increment(1)">Increment</button>
+        <button v-on:click="decrement(1)">Decrement</button>
+        <hr>
+        <button @dblclick="increment(5)">Increment</button>
+        <button @dblclick="decrement(5)">Decrement</button>
+
+
+        <h2>Final Result : {{ calcul }}</h2>
+
+        <hr>
+
+        <h1>{{ message }}</h1>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>
